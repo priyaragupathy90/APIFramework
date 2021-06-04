@@ -36,5 +36,22 @@ public class TestRunner {
 //initial setup
 	//git config --global user.name "Priya Ragupathy"
 	//git config --global user.email priyaragupathy63@gmail.com
+	//cd <wsdirectory>
+	//git init
+//to add files to staging
+	//git add * or git add <file name>
+//to check status to staging
+	//git status
+//to commit
+	//git commit -m "FirstCommit"
+//connecting to repo only in initial setup
+	//git remote add origin https://github.com/priyaragupathy90/APIFramework.git 
+//push code
+	// git push origin master
+//clone the code in another machine-only initial setup
+	//git clone https://github.com/priyaragupathy90/APIFramework.git
+//pull code
+	//git pull origin master
+
 
 

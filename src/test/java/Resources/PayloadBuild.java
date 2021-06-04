@@ -35,5 +35,14 @@ public class PayloadBuild {
 				+ "}\r\n"
 				+ "";
 	}
+	
+	public String updatePlacePayloadBuild(String place, String newAddress)
+	{
+		return "{\r\n"
+				+ "\"place_id\":\""+place+"\",\r\n"
+				+ "\"address\":\""+newAddress+"\",\r\n"
+				+ "\"key\":\"qaclick123\"\r\n"
+				+ "}";
+	}
 
 }

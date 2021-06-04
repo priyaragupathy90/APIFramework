@@ -14,6 +14,13 @@ Examples:
 |dd|24 Ram Nagar|English|
 #|pp|24 Ram Nagar|English|
 
+@UpdatePlace @Regression @priya
+Scenario: To verify if a place is updated with new address
+Given UpdatePlace Payload 
+When user calls "updatePlaceAPI" with "PUT" request
+Then the API call is success with status code 200
+And verify "msg" from response is "Address successfully updated"
+
 @DeletePlace @Regression @priya
 Scenario: To verify if a place is deleted
 Given DeletePlace Payload 

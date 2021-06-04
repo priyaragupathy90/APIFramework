@@ -28,6 +28,7 @@ public class mapsStepDefinition extends Utils {
 	RequestSpecification req1;	
 	Response response;
 	static String place_id;
+	String newAddress;
 	
 	PayloadBuild pb=new PayloadBuild();
 	
@@ -80,6 +81,12 @@ public class mapsStepDefinition extends Utils {
 	@Given("DeletePlace Payload")
 	public void delete_place_payload() throws IOException {
 		req1=given().spec(requestBuilder()).body(pb.deletePlacePayloadBuild(place_id));	
+	}
+	
+	@Given("UpdatePlace Payload")
+	public void updateplace_payload() throws IOException {
+		newAddress=(getGlobalParam("newAddress"));
+		req1=given().spec(requestBuilder()).body(pb.updatePlacePayloadBuild(place_id,newAddress));	
 	}
 
 

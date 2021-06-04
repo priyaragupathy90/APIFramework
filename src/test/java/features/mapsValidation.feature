@@ -1,6 +1,6 @@
 Feature: Validating Maps API
 
-@AddPlace @Regression
+@AddPlace @Regression @priya
 Scenario Outline: To verify if a place is added
 Given AddPlace Payload with "<name>" "<address>" "<lang>"
 When user calls "addPlaceAPI" with "POST" request
@@ -14,7 +14,7 @@ Examples:
 |dd|24 Ram Nagar|English|
 #|pp|24 Ram Nagar|English|
 
-@DeletePlace @Regression
+@DeletePlace @Regression @priya
 Scenario: To verify if a place is deleted
 Given DeletePlace Payload 
 When user calls "deletePlaceAPI" with "POST" request
